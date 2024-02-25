@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica Médica Saúde & Vida - Contato</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a Clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+                <div class="header">
+                <img src="header-image-contato.jpg" alt="Contato da Clínica Médica Saúde & Vida">
+        </div>
+    <div id="content">
+        <!-- Conteúdo da página -->
+        <h1>Entre em Contato Conosco</h1>
+        <p>Para mais informações, dúvidas ou agendamentos, entre em contato pelo telefone,
+            WhatsApp ou preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+        
+        <h2>Informações de Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>WhatsApp: (11) 9876-5432</p>
+        <p>Email: contato@clinicasaudevida.com.br</p>
+        <p>Endereço: Avenida da Saúde, 123 - Centro</p>
+        
+        <!-- iframe do Google Maps - usado localização da SME DE FRAIBURGO-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d745.2784429210451!2d-50.91781085308864!3d-27.025260466288497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1703012160606!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Formulário de Contato</h2>
+        <form action="script-de-processamento.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+    <div id="footer">
+        <!-- Informações de contato -->
+        <p>&copy; 2023 Clínica Médica Saúde & Vida</p>
+    </div>
+</body>
+</html>
